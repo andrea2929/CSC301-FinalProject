@@ -1,0 +1,2 @@
+INSERT INTO user_pokemon (user_id, pokemon_id, id, nickname, is_shiny, stat_hp, stat_attack, stat_defense, stat_spattack, stat_spdefense, stat_speed, ability, level)
+VALUES (:user_id, :pokemon_id, :id, :nickname, :is_shiny, :stat_hp, :stat_attack, :stat_defense, :stat_spattack, :stat_spdefense, :stat_speed, :ability, :level)

@@ -1,0 +1,116 @@
+.pokedex-item{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+
+	margin: 20px;
+	text-align: center;
+
+	border: 1px solid black;
+	border-radius: 100%;
+	background-color: white;
+
+	padding-top: 25px;
+
+	text-transform: capitalize;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.pokedex-item:hover {
+	background: #333;
+}
+
+.pokedex-item:hover .pokedex-item-info, .pokedex-item-hover{
+	display: none;
+	margin-top: 25px;
+	color: white;
+}
+
+.pokedex-item:hover .pokedex-item-hover{
+	display: inline;
+}
+
+.btn-group {
+  margin: 10px auto;
+}
+
+.pokenav {
+	width: 100%;
+	overflow: scroll;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	margin-top: 60px;
+}
+
+.pokedex-number {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+
+	border-radius: 100%;
+	padding: 5px 0;
+
+	background: #333;
+	color: white;
+
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.pokedex-item-hover h2 {
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		margin-top: 180px;
+	}
+
+	.pokedex a {
+		width: 100%;
+	}
+
+	.pokedex-item {
+		width: 90%;
+		margin-top: 2.5px;
+		border-radius: 5px;
+		color: white;
+	}
+
+	.pokedex-item {
+		background: #333;
+	}
+
+	.pokedex-item-info, .pokedex-item:hover .pokedex-item-info, .pokedex-item-hover, .pokedex-item:hover .pokedex-item-hover{
+		display: inline-block;
+		margin: 0;
+		color: white;
+	}
+
+	.pokedex-item:hover .pokedex-item-hover, .pokedex-item-hover {
+		position: absolute;
+		z-index: 1;
+		margin: -35px 0 0 -65px;
+
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+
+	.pokedex-item img{
+		position: relative;
+		z-index: 2;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		margin-top: 180px;
+	}
+}
