@@ -24,8 +24,8 @@
 
 		$params = array(
 			'user_id' => $user['id'],
-			'pokemon_id' => $id,
-			'id' => $newid[0]['id'],
+			'pokemon_id' => get('id'),
+			'id' => implode($pokemon->getnewid()),
 			'level' => $level,
 			'ability' => $ability,
 			'nickname' => $nickname,
@@ -76,6 +76,7 @@
 			<br><br>
 
 			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  <i class="fa fa-plus" aria-hidden="true"></i> 
 			  Add Pokemon
 			</button>
 
@@ -92,7 +93,7 @@
 				        	<input type="number" class="form-control" name="level" placeholder="level" min="1" max="100">
 							<br>
 							<p>Select the ability: </p>
-							<?php foreach ($pokemon->getAbilities()  as $ability) : ?>
+							<?php foreach ($pokemon->getAbilities() as $ability) : ?>
 								<input type="radio" name="ability" value="<?php echo $ability['ability_id']; ?>"> <?php echo $ability['ability_id']; ?><br>
 							<?php endforeach; ?>
 							<br>
@@ -108,14 +109,14 @@
 							<br>
 							<input type="number" class="form-control" name="stat_spdefense" placeholder="Special Defense" min="1">
 							<br>
-							<input type="number" class="form-control" name="stat_speed" placeholder="Speed">
+							<input type="number" class="form-control" name="stat_speed" placeholder="Speed" min="1">
 							<br>
 							<input type="checkbox" name="is_shiny" value="1"> <label>Shiny</label>
 						
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="submit" value="Add" class="btn btn-primary">Save changes</button>
+				        <button type="submit" value="Add" class="btn btn-primary">Add Pokemon</button>
 				      </div>
 			      </form>
 			    </div>

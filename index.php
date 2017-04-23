@@ -51,7 +51,6 @@
 <div class="jumbotron">
 	<div class="container">
 		<h1>Login</h1>
-		<p>This website is for cool kids only</p>
 	</div>
 </div>
 
@@ -72,14 +71,14 @@
 						<a href="forgot.php">Forgot password</a>
 					</div>
 					<div class="col-md-6">
-						<a href="register.php">Register here</a>
+						<a href="register.php">Register</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-9">
 				<p>
 					If you don't have a <strong>username</strong> or don't remember your password you're out of luck.
-					You're a loser. Too bad.
+					Too bad.
 				</p>
 				<p>
 					Go home and snoop on someone else's project.
